@@ -3,7 +3,9 @@
 //
 #include "stdio.h"
 
-int main() {
+void test(int pint,int *p_int);
+
+int my_main() {
     char a = 'a', c = 'c';
     char *p_a = &a;
     char **_pa = &p_a;
@@ -32,6 +34,12 @@ int main() {
     if (p_a1 == p_a2) {
         printf("%d\n", *p_a2);
     } else {
-        printf("%d\n", *p_a1);
+        printf("% d\n", *p_a1);
     }
+     test(a1,p_a2);
+}
+
+void test(int p,int *p_1)
+{
+    printf("%d\t%p\n",p,p_1);
 }

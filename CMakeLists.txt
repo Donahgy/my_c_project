@@ -3,4 +3,4 @@ project(c_one C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(c_one main.c test.c  pointer/three.c)
+add_executable(c_one main.c test.c  pointer/three.c pointer/one.c pointer/four.c)
